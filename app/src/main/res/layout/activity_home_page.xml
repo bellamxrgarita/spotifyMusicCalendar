@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_linear_gradient"
+        tools:context=".homePage">
+
+        <!-- All your inner views go here -->
+
+        <TextView
+            android:id="@+id/userGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/openingGreeting"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/usernameDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:layout_marginBottom="22dp"
+            android:text=" insert username"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/lastPlayedLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+        <TextView
+            android:id="@+id/lastPlayedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/lastPlayedLabel"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userGreeting" />
+
+        <ImageView
+            android:id="@+id/trackImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastPlayedLabel" />
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Track Title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/trackImage" />
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="by Artist"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/songTitle" />
+
+        <FrameLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="470dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@id/navBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/songArtist" />
+
+        <LinearLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#281668"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/navHome"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="Home"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_home_24" />
+
+            <Space
+                android:layout_width="64dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/navCalendar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="Calendar"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/calendar_icon" />
+            <Space
+                android:layout_width="64dp"
+                android:layout_height="match_parent" />
+
+            <ImageButton
+                android:id="@+id/navLogout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="12dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="Home"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/exit_to_app" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

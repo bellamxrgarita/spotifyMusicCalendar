@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_linear_gradient"
+    tools:context=".dateListeningHistory">
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#281668"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/navHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_home_24" />
+
+        <Space
+            android:layout_width="64dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/navCalendar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="Calendar"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendar_icon" />
+        <Space
+            android:layout_width="64dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/navLogout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="12dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="Home"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/exit_to_app" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trackRecyclerView"
+        android:layout_width="385dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/navBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectedDateLabel" />
+
+    <TextView
+        android:id="@+id/emptyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/noHistoryError"
+        android:visibility="gone"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/selectedDateLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedDateLabel"
+        android:layout_width="366dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/listeningHistoryLabel"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

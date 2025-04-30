@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">musii</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="home_fragment_label">Home</string>
+
+    <string name="displayAppName">musicCalendar</string>
+    <string name="openingGreeting">Bienvenido de nuevo</string>
+    <string name="lastPlayedLabel">Última canción reproducida</string>
+    <string name="newUsernameHint">Nuevo nombre de usuario</string>
+    <string name="emailHint">Correo electrónico</string>
+    <string name="signUpLabel"> Registrarse </string>
+    <string name="loginLabel"> Iniciar sesión </string>
+    <string name="createAccountLabel"> Crear cuenta</string>
+    <string name="passLabel"> Contraseña </string>
+    <string name="confirmPassLabel"> Confirmar contraseña</string>
+    <string name="listeningHistoryLabel"> Historial de escucha por fecha</string>
+    <string name="dateHistoryLabel"> Historial de escucha: %1$s </string>
+    <string name="noHistoryError"> No se encontró historial de escucha para esta fecha. </string>
+    <string name="rememberMe"> Recuérdame</string>
+
+
+
+</resources>
