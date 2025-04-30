@@ -2,7 +2,7 @@
 
 The purpose of this project was to create a mobile Android application that transforms your daily listening habits into a visual calendar. Powered by the Spotify API and Firebase, the app tracks your music playback and lets you explore your listening history day by day — like a musical journal in your pocket.
 
-This is my most recent version of the app as I want to continue working on it to add more features to develop the application even further. I used Android SDK, Firebase Realtime DB, Firebase Cloud Functions, and Spotify's Web API to create this project.
+This is my most recent version of the app as I want to continue working on it to add more features to develop the application even further. I used Android SDK, Firebase Realtime DB, Firebase Cloud Functions, and Spotify's Web API to create this project. Eventually, I'd like to transition this app's idea to React-Native so it could be supported on both Android and iOS
 
 # Current Application's UI
 ![Alt text](assets/Picture1.jpg)
