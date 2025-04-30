@@ -1,4 +1,4 @@
-# Handheld Music Spotify Calendar
+# Android Music Spotify Calendar App
 
 The purpose of this project was to create a mobile Android application that transforms your daily listening habits into a visual calendar. Powered by the Spotify API and Firebase, the app tracks your music playback and lets you explore your listening history day by day — like a musical journal in your pocket.
 
