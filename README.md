@@ -5,7 +5,14 @@ The purpose of this project was to create a mobile Android application that tran
 This is my most recent version of the app as I want to continue working on it to add more features to develop the application even further. I used Android SDK, Firebase Realtime DB, Firebase Cloud Functions, and Spotify's Web API to create this project.
 
 # Current Application's UI
-![Alt text](asserts/Picture1.jpg)
+![Alt text](assets/Picture1.jpg)
+
+*This is the login screen and the first activity that's shown when you're opening the app*
+![Alt text](assets/Picture2.jpg)
+![Alt text](assets/Picture3.jpg)
+![Alt text](assets/Picture4.jpg)
+![Alt text](assets/Picture5.jpg)
+![Alt text](assets/Picture6.jpg)
 
 # Links to Demo Videos
 [Populated User Demo Video](https://drive.google.com/file/d/14wilNhpJXqkkTW0ihJ3m7QICJO1Bk6Bj/view?usp=sharing)
