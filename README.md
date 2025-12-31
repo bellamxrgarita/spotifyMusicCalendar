@@ -1,8 +1,9 @@
 # Android Music Spotify Calendar App
+This project began as a final assignment for my Handheld Software Development course and has since evolved into an ongoing personal project focused on turning music data into a meaningful, user-centered experience.
 
-The purpose of this project was to create a mobile Android application that transforms your daily listening habits into a visual calendar. Powered by the Spotify API and Firebase, the app tracks your music playback and lets you explore your listening history day by day — like a musical journal in your pocket.
+The application is an Android music-listening calendar that transforms daily Spotify playback history into a visual timeline. By integrating Spotify’s Web API with Firebase Realtime Database and Firebase Cloud Functions, the app continuously tracks a user’s listening activity and allows them to explore their music history day by day—functioning as a lightweight musical journal.
 
-This is my most recent version of the app as I want to continue working on it to add more features to develop the application even further. I used Android SDK, Firebase Realtime DB, Firebase Cloud Functions, and Spotify's Web API to create this project. Eventually, I'd like to transition this app's idea to React-Native so it could be supported on both Android and iOS
+The current version is built using Kotlin, Android SDK, Firebase Realtime DB, Firebase Cloud Functions, and Spotify’s Web API, with a backend designed to securely handle authorization and data persistence. The project is actively being extended with new features and performance improvements, and future plans include migrating the app to React Native to support both Android and iOS from a shared codebase.
 
 # Current Application's UI
 ![Alt text](assets/Picture1.jpg)
